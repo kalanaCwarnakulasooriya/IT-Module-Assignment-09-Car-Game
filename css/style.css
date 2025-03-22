@@ -1,0 +1,98 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url(/images/Ar\ HUD\ -\ Wayray.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  overflow: hidden;
+}
+
+/* Game Container */
+#game-container {
+  position: relative;
+  width: 600px;
+  height: 650px;
+  margin: 20px auto;
+  background-image: url(/images/way.jpg);
+  border: 5px dotted rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  overflow: hidden;
+  background-repeat: repeat-y;
+}
+
+/* Game Area */
+#game-area {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* Player Car */
+#player-car {
+  position: absolute;
+  bottom: 20px;
+  left: 175px;
+  width: 100px;
+  height: 100px;
+  background-image: url(/images/yellow-car.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+/* Obstacle */
+.obstacle {
+  position: absolute;
+  width: 50px;
+  height: 80px;
+  background-image: url(/images/red-car.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+/* Score Board */
+#score-board {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Buttons in the menu */
+#game-menu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#game-menu button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+  transition: background-color 0.3s ease;
+}
+
+#game-menu button:hover {
+  background-color: #0056b3;
+}
+
+/* Hide the game menu during play */
+.hidden {
+  display: none;
+}
